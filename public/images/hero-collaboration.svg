@@ -1,0 +1,41 @@
+<svg width="640" height="480" viewBox="0 0 640 480" xmlns="http://www.w3.org/2000/svg" role="img" aria-labelledby="title desc">
+  <title id="title">Illustration d'une équipe digitale</title>
+  <desc id="desc">Trois personnes collaborent autour d'un tableau de bord numérique.</desc>
+  <defs>
+    <linearGradient id="panel" x1="0%" y1="0%" x2="100%" y2="100%">
+      <stop offset="0%" stop-color="#1daaa8" />
+      <stop offset="100%" stop-color="#19b328" />
+    </linearGradient>
+    <linearGradient id="accent" x1="0%" y1="0%" x2="100%" y2="0%">
+      <stop offset="0%" stop-color="#db1d39" />
+      <stop offset="100%" stop-color="#1daaa8" />
+    </linearGradient>
+  </defs>
+  <rect width="640" height="480" rx="40" fill="#f9f9f9" />
+  <g transform="translate(80 60)">
+    <rect x="40" y="70" width="440" height="240" rx="32" fill="white" stroke="#d7e3e7" stroke-width="2" />
+    <rect x="60" y="90" width="220" height="36" rx="18" fill="#d7f1f0" />
+    <rect x="300" y="90" width="140" height="36" rx="18" fill="#fde1d9" />
+    <rect x="60" y="150" width="360" height="16" rx="8" fill="#1daaa8" opacity="0.3" />
+    <rect x="60" y="180" width="360" height="16" rx="8" fill="#db1d39" opacity="0.25" />
+    <rect x="60" y="210" width="220" height="16" rx="8" fill="#19b328" opacity="0.35" />
+    <rect x="60" y="240" width="120" height="16" rx="8" fill="#000000" opacity="0.25" />
+    <rect x="320" y="210" width="100" height="70" rx="20" fill="url(#panel)" opacity="0.85" />
+  </g>
+  <g transform="translate(90 310)">
+    <path d="M60 120c-22 0-40-18-40-40s18-40 40-40" fill="#1daaa8" opacity="0.15" />
+    <circle cx="60" cy="40" r="30" fill="#1daaa8" />
+    <rect x="30" y="70" width="60" height="80" rx="30" fill="#1daaa8" />
+  </g>
+  <g transform="translate(260 280)">
+    <path d="M60 120c-22 0-40-18-40-40s18-40 40-40" fill="#19b328" opacity="0.18" />
+    <circle cx="60" cy="40" r="30" fill="#19b328" />
+    <rect x="30" y="70" width="60" height="80" rx="30" fill="#19b328" />
+  </g>
+  <g transform="translate(430 290)">
+    <path d="M60 120c-22 0-40-18-40-40s18-40 40-40" fill="#db1d39" opacity="0.16" />
+    <circle cx="60" cy="40" r="30" fill="#db1d39" />
+    <rect x="30" y="70" width="60" height="80" rx="30" fill="#db1d39" />
+  </g>
+  <path d="M220 380h200" stroke="url(#accent)" stroke-width="8" stroke-linecap="round" opacity="0.6" />
+</svg>

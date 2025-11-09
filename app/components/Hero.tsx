@@ -1,101 +1,79 @@
 "use client";
 
 import { motion } from "framer-motion";
+import Image from "next/image";
 import { Button } from "./Button";
-
-const title = "byteSolutions";
-
-const letterVariants = {
-  hidden: { opacity: 0, y: 20 },
-  visible: (index: number) => ({
-    opacity: 1,
-    y: 0,
-    transition: {
-      delay: 0.04 * index,
-      duration: 0.5,
-      ease: "easeOut",
-    },
-  }),
-};
 
 export function Hero() {
   return (
-    <section className="relative overflow-hidden bg-linear-to-br from-(--light) via-white to-[color-mix(in_srgb,var(--secondary)_10%,white_90%)] pb-28 pt-40">
+    <section className="relative overflow-hidden bg-linear-to-br from-(--light) via-white to-[color-mix(in_srgb,var(--secondary)_12%,white_88%)] pb-28 pt-36">
       <div className="absolute inset-0 -z-10">
         <div
-          className="absolute left-1/2 top-1/3 h-72 w-72 -translate-x-1/2 rounded-full bg-secondary/20 blur-3xl"
+          className="absolute left-1/4 top-16 h-80 w-80 -translate-x-1/2 rounded-full bg-secondary/18 blur-3xl"
           aria-hidden
         />
         <div
-          className="absolute right-20 top-10 h-60 w-60 rounded-full bg-primary/15 blur-3xl"
+          className="absolute right-20 top-32 h-72 w-72 rounded-full bg-primary/18 blur-3xl"
           aria-hidden
         />
       </div>
-      <div className="mx-auto flex max-w-6xl flex-col items-center px-4 text-center sm:px-6 lg:px-8">
-        <motion.span
-          className="inline-flex items-center gap-2 rounded-full bg-white/90 px-4 py-1 text-xs font-semibold uppercase tracking-[0.32em] text-secondary shadow-lg shadow-secondary/15"
-          initial={{ opacity: 0, y: -12 }}
-          animate={{ opacity: 1, y: 0 }}
-          transition={{ delay: 0.2, duration: 0.5, ease: "easeOut" }}
+      <div className="mx-auto flex max-w-6xl flex-col gap-16 px-4 sm:px-6 lg:flex-row lg:items-center lg:gap-20 lg:px-8">
+        <motion.div
+          className="flex-1 text-left"
+          initial={{ opacity: 0, x: -40 }}
+          animate={{ opacity: 1, x: 0 }}
+          transition={{ duration: 0.6, ease: "easeOut" }}
         >
-          Agence digitale
-        </motion.span>
-        <div className="mt-6 space-y-4">
           <motion.h1
-            className="text-balance font-semibold leading-tight text-(--dark)"
-            initial="hidden"
-            animate="visible"
-            transition={{ staggerChildren: 0.03 }}
+            className="mt-6 text-balance text-4xl font-semibold leading-tight text-(--dark) sm:text-5xl md:text-6xl"
+            initial={{ opacity: 0, y: 24 }}
+            animate={{ opacity: 1, y: 0 }}
+            transition={{ delay: 0.2, duration: 0.6, ease: "easeOut" }}
           >
-            <span className="block text-4xl sm:text-5xl md:text-6xl">
-              {title.split("").map((letter, index) => (
-                <motion.span
-                  key={`${letter}-${index}`}
-                  custom={index}
-                  variants={letterVariants}
-                  className="inline-block"
-                >
-                  {letter}
-                </motion.span>
-              ))}
-            </span>
-            <motion.span
-              className="mt-4 block text-3xl text-secondary sm:text-4xl md:text-5xl"
-              initial={{ opacity: 0, y: 24 }}
-              animate={{ opacity: 1, y: 0 }}
-              transition={{ delay: 0.6, duration: 0.6, ease: "easeOut" }}
-            >
-              Solutions digitales
-            </motion.span>
-            <motion.span
-              className="mt-2 block text-xl text-(--dark-75) sm:text-2xl"
-              initial={{ opacity: 0, y: 24 }}
-              animate={{ opacity: 1, y: 0 }}
-              transition={{ delay: 0.75, duration: 0.6, ease: "easeOut" }}
-            >
-              pensées pour les humains
-            </motion.span>
+            Déployez votre solution digitale pensée pour les humains
           </motion.h1>
           <motion.p
-            className="mx-auto max-w-2xl text-lg text-(--dark-75)"
-            initial={{ opacity: 0, y: 20 }}
+            className="mt-6 max-w-xl text-lg text-(--dark-75)"
+            initial={{ opacity: 0, y: 24 }}
             animate={{ opacity: 1, y: 0 }}
-            transition={{ delay: 0.9, duration: 0.6, ease: "easeOut" }}
+            transition={{ delay: 0.35, duration: 0.6, ease: "easeOut" }}
           >
-            Sites vitrine · Applications sur mesure · IA · UX premium
-            <br />
+            Nous créons des sites vitrine, applications web et intégrations IA
+            qui combinent performance, accessibilité et design premium.
           </motion.p>
-        </div>
+          <motion.div
+            className="mt-10 flex flex-col gap-4 sm:flex-row"
+            initial={{ opacity: 0, y: 24 }}
+            animate={{ opacity: 1, y: 0 }}
+            transition={{ delay: 0.5, duration: 0.5, ease: "easeOut" }}
+          >
+            <Button size="sm">Discutons de votre projet</Button>
+            <Button variant="outline" size="sm">
+              Demander un audit gratuit
+            </Button>
+          </motion.div>
+        </motion.div>
+
         <motion.div
-          className="mt-10 flex flex-col items-center gap-4 sm:flex-row"
-          initial={{ opacity: 0, y: 24 }}
-          animate={{ opacity: 1, y: 0 }}
-          transition={{ delay: 1.1, duration: 0.5, ease: "easeOut" }}
+          className="relative flex flex-1 justify-center"
+          initial={{ opacity: 0, x: 40 }}
+          animate={{ opacity: 1, x: 0 }}
+          transition={{ delay: 0.25, duration: 0.6, ease: "easeOut" }}
         >
-          <Button size="lg">Lancer mon projet</Button>
-          <Button variant="outline" size="lg">
-            Consultation gratuite
-          </Button>
+          <div className="relative w-full max-w-xl">
+            <div
+              className="absolute -inset-6 rounded-4xl bg-linear-to-r from-secondary/20 via-transparent to-primary/20 blur-2xl"
+              aria-hidden
+            />
+            <Image
+              src="/images/hero-collaboration.svg"
+              alt="Équipe byteSolutions collaborant sur une solution digitale"
+              width={640}
+              height={480}
+              className="w-full"
+              priority
+            />
+          </div>
         </motion.div>
       </div>
     </section>
