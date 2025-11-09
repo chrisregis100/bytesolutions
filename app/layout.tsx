@@ -1,7 +1,7 @@
 import type { Metadata } from "next";
 import { Footer } from "./components/Footer";
 import { Header } from "./components/Header";
-import { montserrat } from "./fonts";
+import { inter, montserrat, poppins } from "./fonts";
 import "./globals.css";
 
 const SITE_NAME = "byteSolutions";
@@ -67,9 +67,13 @@ export default function RootLayout({
   children: React.ReactNode;
 }>) {
   return (
-    <html lang="fr" data-theme="bytesolutions">
+    <html
+      lang="fr"
+      data-theme="bytesolutions"
+      className={`${poppins.variable} ${montserrat.className} ${inter.variable}`}
+    >
       <body
-        className={` ${montserrat.variable}  antialiased bg-(--light) text-(--dark)`}
+        className={`${inter.className} antialiased bg-(--light) text-(--dark)`}
       >
         <a
           href="#contenu-principal"

@@ -4,9 +4,9 @@ import { Section } from "../components/Section";
 import { ValueCard } from "../components/ValueCard";
 
 export const metadata: Metadata = {
-  title: "À propos · byteSolutions",
+  title: "À propos · ByteSolutions",
   description:
-    "Nous sommes une agence digitale basée à Cotonou qui conçoit des expériences web humaines, inclusives et performantes pour les PME du monde entier.",
+    "Nous sommes une agence digitale  qui conçoit des expériences web humaines, inclusives et performantes pour les PME du monde entier.",
 };
 
 const values = [
@@ -40,12 +40,12 @@ export default function AboutPage() {
         align="left"
         eyebrow="Notre ADN"
         title="Une agence humaine, connectée au monde"
-        description="Basés à Cotonou, nous développons des solutions digitales intuitives, performantes et accessibles. Nous aidons les entrepreneurs à transformer leurs idées en produits viables, avec une attention particulière à l’expérience utilisateur et à l’intelligence artificielle."
+        description="Nous développons des solutions digitales intuitives, performantes et accessibles. Nous aidons les entrepreneurs à transformer leurs idées en produits viables, avec une attention particulière à l’expérience utilisateur et à l’intelligence artificielle."
       >
         <div className="grid items-center gap-10 lg:grid-cols-[1.1fr_0.9fr]">
           <div className="space-y-6 text-left text-lg text-(--dark-75)">
             <p>
-              byteSolutions est née d’une conviction : l’innovation numérique
+              ByteSolutions est née d’une conviction : l’innovation numérique
               doit être inclusive et avoir un impact concret. Nous opérons 100%
               en remote, avec une équipe panafricaine ouverte sur le monde,
               habituée à collaborer avec des PME en Europe, en Amérique du Nord

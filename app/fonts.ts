@@ -1,4 +1,5 @@
-import { Inter, Montserrat, Poppins } from "next/font/google";
+import { Inter, Poppins } from "next/font/google";
+import localFont from "next/font/local";
 
 export const poppins = Poppins({
   subsets: ["latin"],
@@ -7,11 +8,16 @@ export const poppins = Poppins({
   weight: ["400", "500", "600", "700"],
 });
 
-export const montserrat = Montserrat({
-  subsets: ["latin"],
-  variable: "--font-alt",
+export const montserrat = localFont({
+  src: [
+    {
+      path: "../public/Montserrat-Italic-VariableFont_wght.ttf",
+      weight: "100 900",
+      style: "italic",
+    },
+  ],
+  variable: "--font-montserrat",
   display: "swap",
-  weight: ["400", "500", "600", "700"],
 });
 
 export const inter = Inter({
