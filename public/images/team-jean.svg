@@ -1,0 +1,16 @@
+<svg width="480" height="540" viewBox="0 0 480 540" xmlns="http://www.w3.org/2000/svg" role="img" aria-labelledby="title desc">
+  <title id="title">Portrait Jean K.</title>
+  <desc id="desc">Illustration abstraite représentant un développeur africain</desc>
+  <defs>
+    <linearGradient id="gradJean" x1="0%" y1="0%" x2="100%" y2="100%">
+      <stop offset="0%" stop-color="#1daaa8" />
+      <stop offset="100%" stop-color="#19b328" />
+    </linearGradient>
+  </defs>
+  <rect width="480" height="540" rx="48" fill="#f9f9f9" />
+  <circle cx="240" cy="190" r="110" fill="url(#gradJean)" />
+  <rect x="120" y="320" width="240" height="160" rx="80" fill="#db1d39" opacity="0.9" />
+  <circle cx="200" cy="180" r="14" fill="white" />
+  <circle cx="280" cy="180" r="14" fill="white" />
+  <path d="M200 230 Q240 270 280 230" stroke="white" stroke-width="10" stroke-linecap="round" fill="none" />
+</svg>

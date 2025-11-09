@@ -1,0 +1,13 @@
+<svg width="120" height="120" viewBox="0 0 120 120" xmlns="http://www.w3.org/2000/svg" role="img" aria-labelledby="title desc">
+  <title id="title">Logo byteSolutions</title>
+  <desc id="desc">Lettre B stylisée avec un éclair symbolisant la vitesse digitale</desc>
+  <defs>
+    <linearGradient id="gradLogo" x1="0%" y1="0%" x2="100%" y2="100%">
+      <stop offset="0%" stop-color="#1daaa8" />
+      <stop offset="100%" stop-color="#19b328" />
+    </linearGradient>
+  </defs>
+  <rect width="120" height="120" rx="28" fill="#000000" />
+  <path d="M40 92V28h28c18 0 30 10 30 26 0 12-6 20-17 24l13 14H70l-6-12H56v12H40Zm16-28h12c8 0 12-4 12-10s-4-10-12-10H56v20Z" fill="url(#gradLogo)" />
+  <path d="M78 14 62 52h16L60 106l14-42H60l18-50Z" fill="#db1d39" />
+</svg>

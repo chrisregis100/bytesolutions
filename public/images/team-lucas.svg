@@ -1,0 +1,16 @@
+<svg width="480" height="540" viewBox="0 0 480 540" xmlns="http://www.w3.org/2000/svg" role="img" aria-labelledby="title desc">
+  <title id="title">Portrait Lucas O.</title>
+  <desc id="desc">Illustration abstraite représentant un ingénieur IA</desc>
+  <defs>
+    <linearGradient id="gradLucas" x1="100%" y1="0%" x2="0%" y2="100%">
+      <stop offset="0%" stop-color="#1daaa8" />
+      <stop offset="100%" stop-color="#db1d39" />
+    </linearGradient>
+  </defs>
+  <rect width="480" height="540" rx="48" fill="#f9f9f9" />
+  <circle cx="240" cy="185" r="115" fill="url(#gradLucas)" />
+  <rect x="120" y="320" width="240" height="170" rx="90" fill="#000000" opacity="0.9" />
+  <circle cx="210" cy="185" r="14" fill="white" />
+  <circle cx="270" cy="185" r="14" fill="white" />
+  <path d="M205 240 Q240 280 275 240" stroke="white" stroke-width="10" stroke-linecap="round" fill="none" />
+</svg>

@@ -1,65 +1,186 @@
-import Image from "next/image";
+import { CTASection } from "./components/CTASection";
+import { Hero } from "./components/Hero";
+import { ProjectCard } from "./components/ProjectCard";
+import { Section } from "./components/Section";
+import { ServiceCard } from "./components/ServiceCard";
+import { TeamCard } from "./components/TeamCard";
+import { ValueCard } from "./components/ValueCard";
+
+const valueHighlights = [
+  {
+    icon: "Heart" as const,
+    color: "primary" as const,
+    title: "Humain d'abord",
+    description:
+      "Des interfaces accessibles et inclusives, testées auprès de vrais utilisateurs, pour générer de l'engagement durable.",
+  },
+  {
+    icon: "BrainCircuit" as const,
+    color: "secondary" as const,
+    title: "IA utile",
+    description:
+      "Automatisation, chatbots et personnalisation propulsés par l'IA pour des gains business mesurables.",
+  },
+  {
+    icon: "Scale" as const,
+    color: "accent" as const,
+    title: "Prix justes",
+    description:
+      "Des offres modulaires et transparentes pour avancer vite, même avec un budget maîtrisé.",
+  },
+];
+
+const featuredServices = [
+  {
+    icon: "Globe" as const,
+    color: "primary" as const,
+    title: "Sites vitrine",
+    description:
+      "Une présence premium en 7 jours pour raconter votre histoire et convertir.",
+    link: "/contact?service=vitrine",
+  },
+  {
+    icon: "Code2" as const,
+    color: "secondary" as const,
+    title: "Apps sur mesure",
+    description:
+      "De l'idée au MVP, nous construisons des outils métier performants.",
+    link: "/contact?service=app",
+  },
+  {
+    icon: "Lightbulb" as const,
+    color: "accent" as const,
+    title: "Conseil idées",
+    description:
+      "Des ateliers gratuits pour clarifier votre vision et prioriser les premières fonctionnalités.",
+    link: "/contact?service=conseil",
+  },
+  {
+    icon: "Brain" as const,
+    color: "dark" as const,
+    title: "Intégration IA",
+    description:
+      "Chatbots, recommandations et automatisation pour booster l'expérience client.",
+    link: "/contact?service=ia",
+  },
+];
+
+const showcaseProjects = [
+  {
+    title: "Clinique Santé Plus",
+    sector: "Santé",
+    badges: ["IA", "UX Premium"],
+    image: "/images/project-clinic.svg",
+    href: "/portfolio",
+  },
+  {
+    title: "AfrikTrade B2B",
+    sector: "Commerce",
+    badges: ["MVP", "Product Design"],
+    image: "/images/project-trade.svg",
+    href: "/portfolio",
+  },
+  {
+    title: "EduTech Nova",
+    sector: "Éducation",
+    badges: ["Accessibilité", "Web App"],
+    image: "/images/project-edu.svg",
+    href: "/portfolio",
+  },
+];
+
+const teamPreview = [
+  {
+    name: "Régis. A. R. KIKI",
+    role: "Engineering",
+    skill: "Full-Stack & IA",
+    image: "/images/team-jean.svg",
+    linkedin: "https://linkedin.com",
+  },
+  {
+    name: "Obed S. AGBOHOUN",
+    role: "Engineering",
+    skill: "Full-Stack & UX",
+    image: "/images/team-aicha.svg",
+    linkedin: "https://linkedin.com",
+  },
+  {
+    name: "Fidelien ..",
+    role: "Backend Developer",
+    skill: "Backend Development",
+    image: "/images/team-lucas.svg",
+    linkedin: "https://linkedin.com",
+  },
+];
 
 export default function Home() {
   return (
-    <div className="flex min-h-screen items-center justify-center bg-zinc-50 font-sans dark:bg-black">
-      <main className="flex min-h-screen w-full max-w-3xl flex-col items-center justify-between py-32 px-16 bg-white dark:bg-black sm:items-start">
-        <Image
-          className="dark:invert"
-          src="/next.svg"
-          alt="Next.js logo"
-          width={100}
-          height={20}
-          priority
-        />
-        <div className="flex flex-col items-center gap-6 text-center sm:items-start sm:text-left">
-          <h1 className="max-w-xs text-3xl font-semibold leading-10 tracking-tight text-black dark:text-zinc-50">
-            To get started, edit the page.tsx file.
-          </h1>
-          <p className="max-w-md text-lg leading-8 text-zinc-600 dark:text-zinc-400">
-            Looking for a starting point or more instructions? Head over to{" "}
-            <a
-              href="https://vercel.com/templates?framework=next.js&utm_source=create-next-app&utm_medium=appdir-template-tw&utm_campaign=create-next-app"
-              className="font-medium text-zinc-950 dark:text-zinc-50"
+    <>
+      <Hero />
+
+      <Section
+        eyebrow="Valeur ajoutée"
+        title="Une équipe africaine connectée au monde"
+        description="Nous apportons une expertise internationale avec une sensibilité locale. Notre méthodologie met les utilisateurs au cœur du processus pour lancer des produits utiles et mémorables."
+      >
+        <div className="grid gap-6 md:grid-cols-3">
+          {valueHighlights.map((value) => (
+            <ValueCard
+              key={value.title}
+              icon={value.icon}
+              color={value.color}
+              title={value.title}
             >
-              Templates
-            </a>{" "}
-            or the{" "}
-            <a
-              href="https://nextjs.org/learn?utm_source=create-next-app&utm_medium=appdir-template-tw&utm_campaign=create-next-app"
-              className="font-medium text-zinc-950 dark:text-zinc-50"
-            >
-              Learning
-            </a>{" "}
-            center.
-          </p>
+              {value.description}
+            </ValueCard>
+          ))}
         </div>
-        <div className="flex flex-col gap-4 text-base font-medium sm:flex-row">
-          <a
-            className="flex h-12 w-full items-center justify-center gap-2 rounded-full bg-foreground px-5 text-background transition-colors hover:bg-[#383838] dark:hover:bg-[#ccc] md:w-[158px]"
-            href="https://vercel.com/new?utm_source=create-next-app&utm_medium=appdir-template-tw&utm_campaign=create-next-app"
-            target="_blank"
-            rel="noopener noreferrer"
-          >
-            <Image
-              className="dark:invert"
-              src="/vercel.svg"
-              alt="Vercel logomark"
-              width={16}
-              height={16}
-            />
-            Deploy Now
-          </a>
-          <a
-            className="flex h-12 w-full items-center justify-center rounded-full border border-solid border-black/[.08] px-5 transition-colors hover:border-transparent hover:bg-black/[.04] dark:border-white/[.145] dark:hover:bg-[#1a1a1a] md:w-[158px]"
-            href="https://nextjs.org/docs?utm_source=create-next-app&utm_medium=appdir-template-tw&utm_campaign=create-next-app"
-            target="_blank"
-            rel="noopener noreferrer"
-          >
-            Documentation
-          </a>
+      </Section>
+
+      <Section
+        eyebrow="Nos expertises"
+        title="Des solutions digitales pensées pour convertir"
+        description="Du branding à l'intégration IA, notre équipe couvre chaque étape pour accélérer votre croissance."
+      >
+        <div className="grid gap-6 md:grid-cols-2 xl:grid-cols-4">
+          {featuredServices.map((service) => (
+            <ServiceCard key={service.title} {...service} />
+          ))}
         </div>
-      </main>
-    </div>
+      </Section>
+
+      <Section
+        eyebrow="Nos réalisations"
+        title="Des projets en production qui prouvent notre impact"
+        description="Chaque livrable est pensé pour performer, être accessible et facile à faire évoluer."
+      >
+        <div className="grid gap-6 md:grid-cols-2 xl:grid-cols-3">
+          {showcaseProjects.map((project) => (
+            <ProjectCard key={project.title} {...project} />
+          ))}
+        </div>
+      </Section>
+
+      <Section
+        eyebrow="L'équipe"
+        title="On code, design et conseille avec le sourire"
+        description="byteSolutions, ce sont des profils complémentaires pour propulser vos idées : devs full-stack, designers, spécialistes IA et chefs de projet."
+      >
+        <div className="grid gap-6 md:grid-cols-3">
+          {teamPreview.map((member) => (
+            <TeamCard key={member.name} {...member} />
+          ))}
+        </div>
+      </Section>
+
+      <CTASection
+        title="Prêts à co-créer une solution digitale utile et rentable ?"
+        description="Réservez un temps d'échange gratuit avec nos experts pour clarifier vos objectifs et obtenir une roadmap concrète."
+        primaryLabel="Réserver un appel"
+        primaryHref="/contact"
+        secondaryLabel="Découvrir nos services"
+        secondaryHref="/services"
+      />
+    </>
   );
 }

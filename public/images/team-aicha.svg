@@ -1,0 +1,16 @@
+<svg width="480" height="540" viewBox="0 0 480 540" xmlns="http://www.w3.org/2000/svg" role="img" aria-labelledby="title desc">
+  <title id="title">Portrait Aïcha M.</title>
+  <desc id="desc">Illustration abstraite représentant une product designer africaine</desc>
+  <defs>
+    <linearGradient id="gradAicha" x1="0%" y1="0%" x2="0%" y2="100%">
+      <stop offset="0%" stop-color="#db1d39" />
+      <stop offset="100%" stop-color="#1daaa8" />
+    </linearGradient>
+  </defs>
+  <rect width="480" height="540" rx="48" fill="#f9f9f9" />
+  <circle cx="240" cy="180" r="110" fill="url(#gradAicha)" />
+  <rect x="110" y="320" width="260" height="180" rx="120" fill="#19b328" opacity="0.9" />
+  <circle cx="205" cy="175" r="14" fill="white" />
+  <circle cx="275" cy="175" r="14" fill="white" />
+  <path d="M200 230 Q240 260 280 230" stroke="white" stroke-width="10" stroke-linecap="round" fill="none" />
+</svg>

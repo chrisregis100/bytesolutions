@@ -1,0 +1,21 @@
+<svg width="720" height="480" viewBox="0 0 720 480" xmlns="http://www.w3.org/2000/svg" role="img" aria-labelledby="title desc">
+  <title id="title">Mockup Clinique Santé Plus</title>
+  <desc id="desc">Placeholder illustrant un tableau de bord santé</desc>
+  <defs>
+    <linearGradient id="grad" x1="0%" y1="0%" x2="100%" y2="100%">
+      <stop offset="0%" stop-color="#1daaa8" />
+      <stop offset="100%" stop-color="#db1d39" />
+    </linearGradient>
+  </defs>
+  <rect width="720" height="480" rx="48" fill="url(#grad)" />
+  <g fill="white" opacity="0.88">
+    <rect x="96" y="112" width="260" height="40" rx="20" />
+    <rect x="96" y="180" width="420" height="22" rx="11" opacity="0.7" />
+    <rect x="96" y="224" width="360" height="22" rx="11" opacity="0.5" />
+  </g>
+  <g transform="translate(96 276)" fill="white" opacity="0.9">
+    <rect width="150" height="120" rx="24" fill="white" opacity="0.25" />
+    <rect x="190" width="150" height="120" rx="24" fill="white" opacity="0.18" />
+    <rect x="380" width="150" height="120" rx="24" fill="white" opacity="0.12" />
+  </g>
+</svg>
