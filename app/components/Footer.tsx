@@ -40,7 +40,7 @@ export function Footer() {
               aria-label="byteSolutions"
             >
               <Image
-                src="/logo-bytesolutions.svg"
+                src="/logo-bytesolutions.png"
                 alt="Logo byteSolutions"
                 width={48}
                 height={48}

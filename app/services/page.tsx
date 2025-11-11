@@ -13,7 +13,6 @@ export const metadata: Metadata = {
 const services = [
   {
     icon: "Globe" as const,
-    color: "primary" as const,
     title: "Sites vitrine premium",
     description:
       "Création ou refonte responsive, SEO-ready, livrée en 7 à 14 jours avec un système de gestion facile.",
@@ -21,7 +20,6 @@ const services = [
   },
   {
     icon: "Code2" as const,
-    color: "secondary" as const,
     title: "Applications web sur mesure",
     description:
       "Du prototype au produit complet : MVP, SaaS, plateformes métiers avec une stack moderne et sécurisée.",
@@ -29,7 +27,6 @@ const services = [
   },
   {
     icon: "Lightbulb" as const,
-    color: "accent" as const,
     title: "Ateliers porteurs d’idées",
     description:
       "Coaching stratégique, définition du MVP, priorisation et maquette interactive pour convaincre vos parties prenantes.",
@@ -37,7 +34,6 @@ const services = [
   },
   {
     icon: "Brain" as const,
-    color: "dark" as const,
     title: "Intégrations IA utiles",
     description:
       "Chatbots, personnalisation, automatisation avec suivi des KPIs et respect de vos contraintes RGPD.",

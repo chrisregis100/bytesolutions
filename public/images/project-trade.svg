@@ -1,18 +1,11 @@
 <svg width="720" height="480" viewBox="0 0 720 480" xmlns="http://www.w3.org/2000/svg" role="img" aria-labelledby="title desc">
   <title id="title">Mockup AfrikTrade B2B</title>
   <desc id="desc">Placeholder représentant une marketplace B2B</desc>
-  <defs>
-    <linearGradient id="gradTrade" x1="0%" y1="0%" x2="100%" y2="0%">
-      <stop offset="0%" stop-color="#19b328" />
-      <stop offset="100%" stop-color="#1daaa8" />
-    </linearGradient>
-  </defs>
-  <rect width="720" height="480" rx="48" fill="url(#gradTrade)" />
-  <g fill="#ffffff" opacity="0.9">
-    <rect x="90" y="110" width="540" height="260" rx="28" fill="#ffffff" opacity="0.15" />
-    <rect x="130" y="150" width="460" height="30" rx="15" />
-    <rect x="130" y="210" width="180" height="180" rx="28" opacity="0.8" />
-    <rect x="340" y="210" width="250" height="60" rx="18" opacity="0.6" />
-    <rect x="340" y="290" width="250" height="40" rx="16" opacity="0.6" />
-  </g>
+  <rect width="720" height="480" rx="48" fill="#ffffff" />
+  <rect x="90" y="110" width="540" height="260" rx="32" fill="#ffffff" stroke="#1daaa8" stroke-width="6" />
+  <rect x="130" y="150" width="460" height="32" rx="16" fill="#1daaa8" opacity="0.35" />
+  <rect x="130" y="210" width="190" height="180" rx="28" fill="#1daaa8" opacity="0.18" />
+  <rect x="350" y="210" width="250" height="64" rx="20" fill="#1daaa8" opacity="0.28" />
+  <rect x="350" y="292" width="250" height="44" rx="18" fill="#1daaa8" opacity="0.2" />
+  <path d="M130 360h470" stroke="#000000" stroke-width="4" stroke-linecap="round" opacity="0.2" />
 </svg>

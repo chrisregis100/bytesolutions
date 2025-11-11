@@ -19,7 +19,6 @@ const iconMap: Record<string, LucideIcon> = {
 
 type ServiceCardProps = {
   icon: keyof typeof iconMap;
-  color?: "primary" | "secondary" | "accent" | "dark";
   title: string;
   description: string;
   link: string;
@@ -27,7 +26,6 @@ type ServiceCardProps = {
 
 export function ServiceCard({
   icon,
-  color = "primary",
   title,
   description,
   link,
@@ -37,11 +35,7 @@ export function ServiceCard({
     <Link
       href={link}
       className={cn(
-        "gradient-border flex h-full flex-col rounded-3xl bg-white/90 p-6 text-left transition-transform hover:-translate-y-1",
-        color === "primary" && "hover:shadow-lg hover:shadow-primary/20",
-        color === "secondary" && "hover:shadow-lg hover:shadow-secondary/20",
-        color === "accent" && "hover:shadow-lg hover:shadow-(--accent)/20",
-        color === "dark" && "hover:shadow-lg hover:shadow-black/20"
+        "flex h-full flex-col rounded-3xl border border-transparent bg-white/90 p-6 text-left transition-all hover:-translate-y-1 hover:border-secondary hover:bg-secondary/5 hover:shadow-lg hover:shadow-secondary/20"
       )}
       aria-label={`${title} - ${description}`}
     >

@@ -33,7 +33,6 @@ const valueHighlights = [
 const featuredServices = [
   {
     icon: "Globe" as const,
-    color: "primary" as const,
     title: "Sites vitrine",
     description:
       "Une présence premium en 7 jours pour raconter votre histoire et convertir.",
@@ -41,7 +40,6 @@ const featuredServices = [
   },
   {
     icon: "Code2" as const,
-    color: "secondary" as const,
     title: "Apps sur mesure",
     description:
       "De l'idée au MVP, nous construisons des outils métier performants.",
@@ -49,7 +47,6 @@ const featuredServices = [
   },
   {
     icon: "Lightbulb" as const,
-    color: "accent" as const,
     title: "Conseil idées",
     description:
       "Des ateliers gratuits pour clarifier votre vision et prioriser les premières fonctionnalités.",
@@ -57,7 +54,6 @@ const featuredServices = [
   },
   {
     icon: "Brain" as const,
-    color: "dark" as const,
     title: "Intégration IA",
     description:
       "Chatbots, recommandations et automatisation pour booster l'expérience client.",
