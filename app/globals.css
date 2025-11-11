@@ -11,9 +11,9 @@
   --color-base-200: #eef2f4;
   --color-base-300: #dbe4e8;
   --color-base-content: #02151c;
-  --color-primary: #db1d39;
+  --color-primary: #1ca9de;
   --color-primary-content: #ffffff;
-  --color-secondary: #1daaa8;
+  --color-secondary: #1ca9de;
   --color-secondary-content: #ffffff;
   --color-accent: #19b328;
   --color-accent-content: #ffffff;
@@ -46,12 +46,12 @@
 }
 
 :root {
-  --primary: #db1d39;
+  --primary: #e95222;
   --primary-75: #e87c4f;
   --primary-50: #efa789;
   --primary-25: #f7d3c4;
 
-  --secondary: #1daaa8;
+  --secondary: #1ca9de;
   --secondary-75: #65a2ae;
   --secondary-50: #98c0c9;
   --secondary-25: #cbe0e4;
@@ -89,7 +89,7 @@
   body {
     margin: 0;
     min-height: 100vh;
-    background: radial-gradient(
+    /* background: radial-gradient(
         circle at top left,
         var(--secondary-25),
         transparent 45%
@@ -99,7 +99,7 @@
         var(--primary-25),
         transparent 45%
       ),
-      var(--light);
+      var(--light); */
     color: var(--dark);
     font-family: var(
       --font-body,

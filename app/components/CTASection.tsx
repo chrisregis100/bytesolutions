@@ -38,14 +38,9 @@ export function CTASection({
           <p className="text-lg text-white/85">{description}</p>
         </div>
         <div className="flex flex-col gap-4 sm:flex-row">
-          <Button
-            href={primaryHref}
-            size="lg"
-            variant="secondary"
-            className="bg-white text-primary hover:text-secondary"
-          >
+          {/* <button className="bg-white text-primary rounded-full w-52 font-bold hover:text-secondary">
             {primaryLabel}
-          </Button>
+          </button> */}
           {secondaryLabel && secondaryHref ? (
             <Button
               href={secondaryHref}

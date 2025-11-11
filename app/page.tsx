@@ -178,7 +178,7 @@ export default function Home() {
         description="Réservez un temps d'échange gratuit avec nos experts pour clarifier vos objectifs et obtenir une roadmap concrète."
         primaryLabel="Réserver un appel"
         primaryHref="/contact"
-        secondaryLabel="Découvrir nos services"
+        secondaryLabel="Réserver un appel"
         secondaryHref="/services"
       />
     </>
